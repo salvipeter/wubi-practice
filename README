@@ -1,0 +1,25 @@
+			    Wubi Practice
+
+Usage
+-----
+
+In practice mode, the following keys have special meanings:
+- escape : return to the main menu
+- z      : show the solution
+- \      : show the solution for the last one
+
+This is a fairly minimal implementation, but I hope it will help you improve.
+
+Compilation
+-----------
+
+The program requires the SDL library. You can compile it with cmake:
+
+  > mkdir build && cd build
+  > cmake ..
+  > make
+
+Note that program needs the 3 .dat files to be in the directory where you're running it from.
+
+  Peter  Salvi
+vukung@yahoo.com

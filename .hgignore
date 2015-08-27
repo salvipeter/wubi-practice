@@ -1,0 +1,17 @@
+syntax: glob
+
+debug/*
+release/*
+*~
+.\#*
+*\#
+*.o
+*.obj
+Makefile
+*/Debug/*
+*/Release/*
+*/.vs/*
+*.filters
+*.sdf
+*.opensdf
+*.user
