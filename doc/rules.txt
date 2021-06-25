@@ -50,8 +50,8 @@ Each hanzi is written with at most 4 characters. There are various cases:
        3a/1. When it is still less than 4 keys, press the conversion key.
              E.g. 十 : FGH (G & H are its two strokes)
 
-       3a/2. When it is more than 4 keys, write the last key should
-             correspond to its last stroke.
+       3a/2. When it is more than 4 keys, the last key should correspond
+             to its last stroke.
              E.g. 用 : ETNH (T & N are the first 2 strokes, H the last)
 
    3b. When it has at least 4 roots, type the codes for the first, second,
@@ -69,7 +69,7 @@ Each hanzi is written with at most 4 characters. There are various cases:
              with the second key of each type (R/U/F/J/B).
              E.g. 岸 : MDFJ (J represents the last vertical stroke)
 
-       3c/2. In all other cases, type its last stroke
+       3c/3. In all other cases, type its last stroke
              with the third key of each type (E/I/D/K/V).
              E.g. 圆 : LKMI (I represents the last right-falling stroke)
 
