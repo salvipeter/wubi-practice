@@ -136,6 +136,11 @@ Here's a table of all 606 characters that can be typed with at most 2 keys:
 This contains 80 of the 100 most common characters, and the rest can
 be typed with 3 keypresses, except for 日 (JJJJ) and 都 (FTJB).
 
+In the database of this program, there are approx. 11,000 characters
+(4-key sequences: ~6,000, 3-key sequences: ~4,400), and around 49,000
+multi-character combinations (2 characters: ~37,000, 3 characters: ~6,000,
+4+ characters: ~6,000).
+
 Standards
 ---------
 
