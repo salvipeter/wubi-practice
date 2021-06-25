@@ -91,3 +91,12 @@ and phrases can be written with one 4-key code:
 3. Words of 4+ characters are typed using the first key of first,
    second, third and last character.
    E.g. 中国共产党 : KLAI (中 KHK + 国 LGYI + 共 AWU + 党 IPKQ)
+
+As a final note, there are two standards, one from 1986 and one from 1998.
+These differ in the interpretation of many characters, for example the
+character 凹 is treated as MMGD in the '86 version (where the two 'M's
+represent the first 2-2 strokes - note that the first M is "cheating",
+as its 2nd stroke is Z-shaped), and as HNHG in the '98 version.
+
+While the newer version is often more logical, the '86 variant seems to
+be the more popular one.
