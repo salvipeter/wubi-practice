@@ -1,0 +1,93 @@
+Rules of the Wubi input method
+==============================
+
+Each key is assigned ...
+
+1. Several roots.
+
+2. A representative root (the first one in wubi-keys.jpg),
+   e.g. 月 for E.
+
+3. A frequently used character (above the roots in wubi-keys.jpg),
+   e.g. 有 for E.
+
+These should be learned by heart. There is a quasi-logical system:
+
+- T-R-E-W-Q contain roots starting with a left-falling stroke
+  (with T-R-E corresponding to 1, 2 and 3 such strokes, respectively)
+
+- Y-U-I-O-P contain roots starting with a right-falling stroke
+  (with Y-U-I-O corresponding to 1, 2, 3 and 4 such strokes, respectively)
+
+- G-F-D-S-A contain roots starting with a horizontal stroke
+  (with G-F-D corresponding to 1, 2 and 3 such strokes, respectively)
+
+- H-J-K-L-M(!) contain roots starting with a vertical stroke
+  (with H-J-K-L corresponding to 1, 2, 3 and 4 such strokes, respectively)
+
+- N-B-V-C-X contain roots strating with a turning stroke
+  (with N-B-V corresponding to 1, 2 and 3 such strokes, respectively)
+
+Also, the frequently used characters are mostly connected to the roots
+on that key.
+
+Each hanzi is written with at most 4 characters. There are various cases:
+
+1. Frequent characters can be written just by typing the corresponding key.
+   (And an implementation defined conversion key, such as <space>.)
+   E.g. 不 : I
+
+2. Representative roots can be written by typing the corresponding key 4 times.
+   E.g. 水 : IIII
+
+3. All hanzi are written by pressing the roots building up the character.
+
+   3a. When it is a (non-representative) root, start by pressing the
+       corresponding key, then build up the character by its strokes,
+       using the keys T/Y/G/H/N.
+       E.g. 小 : IHTY (H, T & Y are its three strokes)
+
+       3a/1. When it is still less than 4 keys, press the conversion key.
+             E.g. 十 : FGH (G & H are its two strokes)
+
+       3a/2. When it is more than 4 keys, write the last key should
+             correspond to its last stroke.
+             E.g. 用 : ETNH (T & N are the first 2 strokes, H the last)
+
+   3b. When it has at least 4 roots, type the codes for the first, second,
+       third and last one.
+       E.g. 馒 : QNJC (Q & N builds the left part, J the top-right,
+                 C the bottom-right; the middle-right is not represented)
+
+   3c. When it has less than 4 roots,
+
+       3c/1. When it is a left-right character, type its last stroke
+             with the first key of each type (T/Y/G/H/N).
+             E.g. 悟 : NGKG (G represents the last horizontal stroke)
+
+       3c/2. When it is a top-bottom character, type its last stroke
+             with the second key of each type (R/U/F/J/B).
+             E.g. 岸 : MDFJ (J represents the last vertical stroke)
+
+       3c/2. In all other cases, type its last stroke
+             with the third key of each type (E/I/D/K/V).
+             E.g. 圆 : LKMI (I represents the last right-falling stroke)
+
+4. Any key that is already isolated with fewer than 4 keys can be written
+   by pressing the conversion key.
+
+5. In some implementations, the Z key can be used as a wildcard.
+
+In addition to the above, some frequently used (multi-character) words
+and phrases can be written with one 4-key code:
+
+1. Words of 2 characters are typed using the first 2 keys of each code.
+   E.g. 社会 : PYWF (社 PYFG + 会 WFCU)
+
+2. Words of 3 characters are typed using the first key of the first two
+   characters, and the first 2 keys of the last character.
+   E.g. 电视剧 : JPND (电 JNV + 视 PYMQ + 剧 NDJH)
+
+3. Words of 4+ characters are typed using the first key of first,
+   second, third and last character.
+   E.g. 中国共产党 : KLAI (中 KHK + 国 LGYI + 共 AWU + 党 IPKQ)
