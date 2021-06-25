@@ -50,6 +50,9 @@ Each hanzi is written with at most 4 characters. There are various cases:
        3a/1. When it is still less than 4 keys, press the conversion key.
              E.g. 十 : FGH (G & H are its two strokes)
 
+             (In the rare case when it is still not isolated, the code is
+              augmented with 'L's, e.g. 乙 : NNL)
+
        3a/2. When it is more than 4 keys, the last key should correspond
              to its last stroke.
              E.g. 用 : ETNH (T & N are the first 2 strokes, H the last)
