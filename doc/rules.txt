@@ -142,6 +142,15 @@ In the database of this program, there are approx. 11,000 characters
 multi-character combinations (2 characters: ~37,000, 3 characters: ~6,000,
 4+ characters: ~6,000).
 
+Although almost all characters have different codes, there are a few
+clashes, e.g. 去/云 (FCU), 风/冈 (MQI) or 喜/嘉 (FKUK). In the first
+case, FC is already occupied by 支, so there is no way to distinguish
+between the two alternatives. In the other two, MQ and FKU are not
+assigned to different characters, so in theory this could be harnessed
+to avoid ambiguity, but it is not done in practice. Instead, the less
+frequent characters can be typed by choosing from a list, normally by
+typing the number 2.
+
 Standards
 ---------
 
