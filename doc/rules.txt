@@ -79,7 +79,8 @@ Each hanzi is written with at most 4 characters. There are various cases:
 4. Any key that is already isolated with fewer than 4 keys can be written
    by pressing the conversion key.
 
-5. In some implementations, the Z key can be used as a wildcard.
+5. In some implementations, the Z key can be used as a wildcard;
+   in others it is used for pinyin input.
 
 In addition to the above, some frequently used (multi-character) words
 and phrases can be written with one 4-key code:
